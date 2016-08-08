@@ -1,0 +1,67 @@
+﻿{% extends "header.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+    <div class="container">
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">About
+                        <strong>Microsoft Blog</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-responsive img-border-left" src="{% static 'img/slide-4.jpg' %}" alt="">
+                </div>
+                <div class="col-md-6">
+                    <p>Microsoft Blog is a web application running on Azure App Services with PostgreSQL or MySQL Detabase as a backend.</p>
+                    <p>This web application was designed with Python, Django and a PostgreSQL database. If you want a template of this website, download this github repository and 
+                    modify it for your own convenience.</p>
+                    <p>The intention of this Blog website is for customers/interns/prospective employees to see a different side of your company; the human side. Enjoy!</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Our
+                        <strong>Team</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <img class="img-responsive" src="{% static 'img/yadi.jpg' %}" alt="">
+                    <h3>Yadi Reyes
+                    </h3>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <img class="img-responsive" src="{% static 'img/meet.jpg' %}" alt="">
+                    <h3>Meet Bhagdev  
+                    </h3>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <img class="img-responsive" src="{% static 'img/andrea.jpg' %}" alt="">
+                    <h3>Andrea Lam
+                    </h3>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+		
+
+    </div>
+	
+	<!-- jQuery -->
+    <script src="{% static 'js/jquery.js' %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+{% endblock %}
