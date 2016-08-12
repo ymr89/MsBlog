@@ -1,5 +1,53 @@
-Testing website 
+# Microsoft Blog
+
+## **Description**
+Microsoft Blog is a cross platform in which full time employees or interns can share experiences working at Microsoft. These stories will be available for all prospect hires and interns.  The experiences will come as a blog post by-weekly. Readers will be able to like the stories and comment through Facebook. 
+
+The web application aims to open a different perspective for prospective employees to see a different side of the company through the stories. 
+
+## **Features**
+
+**Admin**: Administration is totally accessible. Administrator can create users which can access to create, modify or delete posts without continuous confirmation from the admin. 
+
+**Contact Form**: Employees or interns interested in share their experience can contact the team and attach their stories in a contact form that will be email to the administrators. 
+
+**Facebook comments**: People reading the posts can like, share and comment on the posts. The feature enables the comments to be recognized by user, in case some comments are inappropriate the admin will be able to remove them. 
+
+## **Stack**
+
+Python 3.4 (see requirements.txt for a list of python packages)
+
+Django 1.9.7
+
+PostgreSQL 9.5 or MySQL on Azure
+
+## **Development**
+
+To develop Microsoft Blog website, download or clone the repository 
+[MsBlog](https://github.com/ymr89/MsBlog).
+
+
+
+## **Prerequisites**
+
++	Windows, Mac or Linux
++	Python 3.4
++	Setuptools, pip, virtualenv
++	Git
++	Python Tools for Visual Studio (PTVS) This is optional. 
+
+**Windows** 
+
+If you don’t already have Python 3.4, you can get it from python.org. Alternatively, we recommend installing Azure SDK for Python 3.4 using the Web Platform installer, which will install Python, setuptools, pip and virtualenv.
+
+For Git, we recommend GitHub for Windows. If you use Visual Studio, you can use the integrated Git Support with the Python Tools 2.2 for Visual Studio.
+
+
+
 
 <a href="https://azuredeploy.net/" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
+
+
+
