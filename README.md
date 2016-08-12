@@ -27,7 +27,6 @@ To develop Microsoft Blog website, download or clone the repository
 [MsBlog](https://github.com/ymr89/MsBlog).
 
 
-
 ## **Prerequisites**
 
 +	Windows, Mac or Linux
@@ -38,9 +37,18 @@ To develop Microsoft Blog website, download or clone the repository
 
 **Windows** 
 
-If you don’t already have Python 3.4, you can get it from python.org. Alternatively, we recommend installing Azure SDK for Python 3.4 using the Web Platform installer, which will install Python, setuptools, pip and virtualenv.
+If you don’t already have Python 3.4, you can get it from python.org. Alternatively, we recommend installing [Azure SDK for Python 3.4] (https://azure.microsoft.com/en-us/develop/python/) using the Web Platform installer, which will install Python, setuptools, pip and virtualenv.
 
-For Git, we recommend GitHub for Windows. If you use Visual Studio, you can use the integrated Git Support with the Python Tools 2.2 for Visual Studio.
+For Git, we recommend GitHub for Windows. If you use Visual Studio, you can use the integrated Git Support with the [Python Tools 2.2 for Visual Studio] (https://github.com/Microsoft/PTVS/releases/v2.2.4).
+
+**Mac/Linux**
+
+You should have Python and Git already installed, make sure the version is at least 3.4. 
+
+## Application Overview
+
+
+
 
 
 
