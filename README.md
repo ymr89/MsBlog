@@ -45,9 +45,9 @@ For Git, we recommend GitHub for Windows. If you use Visual Studio, you can use 
 
 You should have Python and Git already installed, make sure the version is at least 3.4. 
 
-## Application Overview
+## **Application Overview**
 
-** Git repository contents ** 
+**Git repository contents** 
 
 Here is an overview of the folders you’ll find in the Git repository, which you’ll clone in the next section.
 
@@ -70,6 +70,11 @@ The next 3 sections describe how to proceed with the web app development under 3
 ## **Web app development**
 
 **Windows – Python Tools for Visual Studio** 
+
+1.	Clone the repository. 
+First, clone the repository using the URL provided on development section.
+Open the solution file (.sln) that is included in the root of the repository. 
+
 
 
 
