@@ -47,6 +47,12 @@ You should have Python and Git already installed, make sure the version is at le
 
 ## Application Overview
 
+** Git repository contents** 
+
+Here is an overview of the folders you’ll find in the Git repository, which you’ll clone in the next section.
+- Main sources for the application. Consists of 4 pages (index, about, blog, contact) with a master layout. Static content and scripts include bootstrap, jquery and respond.
+- Local management and development server support. Use this to run the application locally, synchronize the database, and create super user.
+- Default database. Includes the necessary tables for the application to run, but it doesn’t contain any users (we will synchronize with a PostgreSQL or MySQL database and create a user).
 
 
 
