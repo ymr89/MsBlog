@@ -53,7 +53,7 @@ Here is an overview of the folders you’ll find in the Git repository, which yo
 
 + Main sources for the application. Consists of 4 pages (index, about, blog, contact) with a master layout. Static content and scripts include bootstrap, jquery and respond.
 
-![1](C://Users/t-yareye/Pictures/MsBlog Documentation/1.jpg)
+![](.../Pictures/MsBlog Documentation/1.png)
 
 + Local management and development server support. Use this to run the application locally, synchronize the database, and create super user.
 
@@ -68,6 +68,16 @@ The next 3 sections describe how to proceed with the web app development under 3
 +	Windows, with Python Tools for Visual Studio
 +	Windows, with command line
 +	Mac/Linux, with command line
+
+## Web App Creation on Portal
+
+The first step in creating your app is to create the web app via the [Azure Portal](https://portal.azure.com).
+
+1. Log into the Azure Portal and click the **NEW** button in the bottom left corner.
+3. In the search box, type "python".
+4. In the search results, select **Django** (published by PTVS), then click **Create**.
+5. Configure the new Django app, such as creating a new App Service plan and a new resource group for it. Then, click **Create**.
+6. Configure Git publishing for your newly created web app by following the instructions at [Local Git Deployment to Azure App Service](app-service-deploy-local-git.md).
 
 ## **Web app development**
 
@@ -118,16 +128,13 @@ If you need help with git, please refer to [Local Git Deployment to Azure App Se
 **Windows – command line**
 
 1.	Clone the repository.  
-First, clone the repository using the URL provided in development section. If you need more information, see [Local Git Deployment to Azure App Service] (https://github.com/Azure/azure-content/blob/master/articles/app-service-web/app-service-deploy-local-git.md).
-
+First, clone the repository using the URL provided in development section. If you need more information, see [Local Git Deployment to Azure App Service] (https://github.com/Azure/azure-content/blob/master/articles/app-service-web/app-service-deploy-local-git.md). 
 ```
 git clone <repo-url>  
 cd <repo-folder>  
 git remote add azure <repo-url>  
 ```
- 
-
-2.	Create a virtual environment.  
+1.	Create a virtual environment.  
 We will create a new virtual environment for development purposes (do not add it to the repository). Virtual environments in Python are not relocatable, so every developer working on the application will create their own locally.  
 Make sure to have the same Python version selected for the web app. 
 
