@@ -53,6 +53,8 @@ Here is an overview of the folders you’ll find in the Git repository, which yo
 
 + Main sources for the application. Consists of 4 pages (index, about, blog, contact) with a master layout. Static content and scripts include bootstrap, jquery and respond.
 
+![1](C://Users/t-yareye/Pictures/MsBlog Documentation/1.jpg)
+
 + Local management and development server support. Use this to run the application locally, synchronize the database, and create super user.
 
 + Default database. Includes the necessary tables for the application to run, but it doesn’t contain any users (we will synchronize with a PostgreSQL or MySQL database and create a user).
@@ -72,8 +74,33 @@ The next 3 sections describe how to proceed with the web app development under 3
 **Windows – Python Tools for Visual Studio** 
 
 1.	Clone the repository. 
+
 First, clone the repository using the URL provided on development section.
 Open the solution file (.sln) that is included in the root of the repository. 
+
+2.	Change the requirements file. 
+
+Double-click on requirements.txt. If you’re using a PostgreSQL database, add _psycopg2==2.6.2_. If you’re using a MySQL database, add _MySQL-python==1.2.3_. By default, requirements.txt contains the driver for a PostgreSQL database. 
+
+3.	Create a virtual environment. 
+
+Right-click on Python Environments and select Add Virtual Environment. Make sure the name is _env_. Click Create, this will create the virtual environment and the dependencies listed in requirenments.txt. 
+
+4.	Change the information on the database.  
+
+Open the folder MsBlog and double-click on settings.py. 
+Scroll down until you find the DATABASES. Change the information according to your database. Save. 
+
+Engine for PostgreSQL: _'django.db.backends.postgresql_psycopg2'_
+
+Engine for MySQL: _'django.db.backends.mysql'_
+
+5.	Migrate and create a superuser. 
+
+To migrate the information into the new database, right-click on the root project, select python and click-on migrate.  
+
+
+
 
 
 
