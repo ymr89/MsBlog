@@ -78,8 +78,8 @@ First, clone the repository using the URL provided on development section.
 Open the solution file (.sln) that is included in the root of the repository. 
 
 [2.](#2) Change the requirements file.  
-Double-click on requirements.txt. If you’re using a PostgreSQL database, add _psycopg2==2.6.2_.  
-If you’re using a MySQL database, add _MySQL-python==1.2.3_. By default, requirements.txt contains the driver for a PostgreSQL database. 
+    Double-click on requirements.txt. If you’re using a PostgreSQL database, add _psycopg2==2.6.2_.  
+    If you’re using a MySQL database, add _MySQL-python==1.2.3_. By default, requirements.txt contains the driver for a PostgreSQL database. 
 
 3. Create a virtual environment.  
 Right-click on Python Environments and select Add Virtual Environment. Make sure the name is _env_. Click Create, this will create the virtual environment and the dependencies listed in requirenments.txt. 
@@ -105,9 +105,9 @@ Press F5 to start debugging, and your web browser will open automatically to the
 
 7.	Make changes.  
 Now you can experiment by making changes to the application sources and/or templates.  
-To access the admin page to add users, or add new posts, access through `/admin/`. 
+To access the admin page to add users, or add new posts, access through _/admin/_. 
  
-Once you have logged in, you can either add posts through the admins page or in the website as `/posts/create/`. 
+Once you have logged in, you can either add posts through the admins page or in the website as _/posts/create/_. 
 
 After you’ve tested your changes, commit to the Git repository. 
 
@@ -120,9 +120,9 @@ If you need help with git, please refer to [Local Git Deployment to Azure App Se
 1.	Clone the repository.  
 First, clone the repository using the URL provided in development section. If you need more information, see [Local Git Deployment to Azure App Service] (https://github.com/Azure/azure-content/blob/master/articles/app-service-web/app-service-deploy-local-git.md).
 
-```git clone <repo-url>  
-cd <repo-folder>  
-git remote add azure <repo-url>```
+   ``` git clone <repo-url>  
+    cd <repo-folder>  
+    git remote add azure <repo-url>```
  
 
 2.	Create a virtual environment.  
