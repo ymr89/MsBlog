@@ -74,30 +74,106 @@ The next 3 sections describe how to proceed with the web app development under 3
 **Windows – Python Tools for Visual Studio** 
 
 1.	Clone the repository. 
-
 First, clone the repository using the URL provided on development section.
 Open the solution file (.sln) that is included in the root of the repository. 
 
 2.	Change the requirements file. 
-
 Double-click on requirements.txt. If you’re using a PostgreSQL database, add _psycopg2==2.6.2_. If you’re using a MySQL database, add _MySQL-python==1.2.3_. By default, requirements.txt contains the driver for a PostgreSQL database. 
 
 3.	Create a virtual environment. 
-
-Right-click on Python Environments and select Add Virtual Environment. Make sure the name is _env_. Click Create, this will create the virtual environment and the dependencies listed in requirenments.txt. 
+    Right-click on Python Environments and select Add Virtual Environment. Make sure the name is _env_. Click Create, this will create the virtual environment and the dependencies listed in requirenments.txt. 
 
 4.	Change the information on the database.  
-
 Open the folder MsBlog and double-click on settings.py. 
 Scroll down until you find the DATABASES. Change the information according to your database. Save. 
-
 Engine for PostgreSQL: _'django.db.backends.postgresql_psycopg2'_
-
 Engine for MySQL: _'django.db.backends.mysql'_
 
 5.	Migrate and create a superuser. 
-
 To migrate the information into the new database, right-click on the root project, select python and click-on migrate.  
+Now, create the super user. As before, right-click on the root project, select python and select Create Superuser. 
+Django will prompt a command-line to set the superuser. Follow the instructions. 
+
+6.	Run using developer server. 
+Press F5 to start debugging, and your web browser will open automatically to the page running locally. 
+ 
+
+7.	Make changes. 
+Now you can experiment by making changes to the application sources and/or templates. 
+To access the admin page to add users, or add new posts, access through /admin/. 
+ 
+Once you have logged in, you can either add posts through the admins page or in the website as /posts/create/. 
+ 
+
+ 
+
+After you’ve tested your changes, commit to the Git repository. 
+
+8.	Deploy to Azure. 
+If you need help with git, please refer to https://github.com/Azure/azure-content/blob/master/articles/app-service-web/app-service-deploy-local-git.md 
+
+
+**Windows – command line**
+
+1.	Clone the repository. 
+First, clone the repository using the URL provided in development section. If you need more information, see Local Git Deployment to Azure App Service.
+ 
+
+2.	Create a virtual environment. 
+We will create a new virtual environment for development purposes (do not add it to the repository). Virtual environments in Python are not relocatable, so every developer working on the application will create their own locally.  Make sure to have the same Python version selected for the web app. 
+
+ 
+
+3.	Change the requirements file. 
+Please refer to step 2 – web app development for Windows – Python Tools for Visual Studio. In the command line, just type requirements.txt
+ 
+Install any external packages required by the application. 
+
+ 
+
+4.	Change the information from the database. 
+Cd into the MsBlog folder, and open the settings.py file. To change the database settings, please refer to step 4 – web app development for Windows – Python Tools for Visual Studio. 
+
+ 
+Don’t forget to cd .. back after you saved the changes in your setting.py file. 
+
+5.	Migrate and create a super user. 
+Run this from the command-line from your project folder to migrate the information: 
+ 
+Then, run this from the command-line to create a superuser: 
+ 
+ Follow the prompts to set the user name, password, etc. 
+6.	Run using development server. 
+You can launch the application running the following command: 
+ 
+
+ 
+
+Then, you can open the browser to that URL. 
+ 
+
+7.	Make changes. 
+Please refer to step 7 – web app development for Windows – Python Tools for Visual Studio. 
+After you’ve tested your changes, commit them to the Git repository:
+
+ 
+8.	Deploy to azure.
+To trigger a deployment, push the changes to Azure. 
+ 
+**Mac/Linux – command line **
+
+## **Troubleshoot **
+`https://blogs.msdn.microsoft.com/azureossds/2015/08/04/debug-django-web-application-in-azure-web-apps/ `
+
+## **Maintainers **
+
+**Microsoft**
++	[Andrea Lam] (andrela@microsoft.com)
++	[Meet Bhagdev] (meetb@microsoft.com)
+
+**Independent**
++	[Yadi Reyes] (ymr89@uw.edu)
+
 
 
 
