@@ -73,11 +73,11 @@ The next 3 sections describe how to proceed with the web app development under 3
 
 **Windows – Python Tools for Visual Studio** 
 
-1.	Clone the repository. 
-First, clone the repository using the URL provided on development section.
+1.	Clone the repository.  
+First, clone the repository using the URL provided on development section.  
 Open the solution file (.sln) that is included in the root of the repository. 
 
-2.	Change the requirements file. 
+[2.](#2)	Change the requirements file. 
 Double-click on requirements.txt. If you’re using a PostgreSQL database, add _psycopg2==2.6.2_. If you’re using a MySQL database, add _MySQL-python==1.2.3_. By default, requirements.txt contains the driver for a PostgreSQL database. 
 
 3.	Create a virtual environment. 
@@ -152,7 +152,7 @@ You can launch the application running the following command:
 Then, you can open the browser to that URL. 
  
 
-7.	Make changes. 
+7.	Make changes.  
 Please refer to step 7 – web app development for Windows – Python Tools for Visual Studio. 
 After you’ve tested your changes, commit them to the Git repository:
 
@@ -174,6 +174,7 @@ To trigger a deployment, push the changes to Azure.
 **Independent**
 +	[Yadi Reyes] (ymr89@uw.edu)
 
+ * [Chapter 1](#chapter-1)
 
 
 
