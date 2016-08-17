@@ -314,7 +314,7 @@ python manage.py runserver
 
 Then, you can open the browser to the URL. 
 
-![19](https://github.com/ymr89/MsBlog/blob/master/Images-README/19.png)
+![19](https://github.com/ymr89/MsBlog/blob/master/Images-README/19.PNG)
 
 + *Make changes.*  
 Now you can experiment by making changes to the application sources and/or templates. To access the admin page to add users, or add new posts, access through _/admin/_.
@@ -324,7 +324,7 @@ Now you can experiment by making changes to the application sources and/or templ
 Once you have logged in, you can either add posts through the admins page or in the website as _/posts/create/_.
 
 ![16](https://github.com/ymr89/MsBlog/blob/master/Images-README/16.png)  
-![17](https://github.com/ymr89/MsBlog/blob/master/Images-README/17.png)  
+ 
 
 After you’ve tested your changes, commit them to the Git repository:
 
