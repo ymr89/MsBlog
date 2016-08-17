@@ -47,7 +47,7 @@ You should have Python and Git already installed, make sure the version is at le
 
 ## **Application Overview**
 
-**Git repository contents** 
+**Git Repository Contents** 
 
 Here is an overview of the folders you’ll find in the Git repository, which you’ll clone in the next section.
 
@@ -83,25 +83,25 @@ The first step in creating your app is to create the web app via the [Azure Port
 5. Configure the new app, such as creating a new App Service plan and a new resource group for it. Then, click **Create**.
 6. Configure Git publishing for your newly created web app by following the instructions at [Local Git Deployment to Azure App Service](app-service-deploy-local-git.md).
 
-## **Web app development**
+## **Web App Development**
 
 **Windows – Python Tools for Visual Studio** 
 
-1.	Clone the repository.  
++	Clone the repository.  
 First, clone the repository using the URL provided on development section.  
 Open the solution file (.sln) that is included in the root of the repository.  
 ![7](https://github.com/ymr89/MsBlog/blob/master/Images-README/7.png)
 
-2. Change the requirements file.  
++ Change the requirements file.  
 Double-click on requirements.txt. If you’re using a PostgreSQL database, add _psycopg2==2.6.2_.  
 If you’re using a MySQL database, add _MySQL-python==1.2.3_. By default, requirements.txt contains the driver for a PostgreSQL database.  
 ![8](https://github.com/ymr89/MsBlog/blob/master/Images-README/8.png)
 
-3. Create a virtual environment.  
++ Create a virtual environment.  
 Right-click on Python Environments and select Add Virtual Environment. Make sure the name is _env_. Click Create, this will create the virtual environment and the dependencies listed in requirenments.txt.  
 ![9](https://github.com/ymr89/MsBlog/blob/master/Images-README/9.png)
 
-4.	Change the information on the database.  
++	Change the information on the database.  
 Open the folder MsBlog and double-click on settings.py.  
 ![10](https://github.com/ymr89/MsBlog/blob/master/Images-README/10.png)  
 Scroll down until you find the DATABASES. Change the information according to your database. Save.   
@@ -109,29 +109,29 @@ Engine for PostgreSQL: _'django.db.backends.postgresql_psycopg2'_
 Engine for MySQL: _'django.db.backends.mysql'_  
 ![11](https://github.com/ymr89/MsBlog/blob/master/Images-README/11.png)
 
-5.	Migrate and create a superuser.  
++	Migrate and create a superuser.  
 To migrate the information into the new database, right-click on the root project, select python and click-on migrate.  
 ![12](https://github.com/ymr89/MsBlog/blob/master/Images-README/12.png)  
 Now, create the super user. As before, right-click on the root project, select python and select Create Superuser.
 ![13](https://github.com/ymr89/MsBlog/blob/master/Images-README/13.png)  
 Django will prompt a command-line to set the superuser. Follow the instructions. 
 
-6.	Run using developer server.  
++	Run using developer server.  
 Press F5 to start debugging, and your web browser will open automatically to the page running locally.  
 ![14](https://github.com/ymr89/MsBlog/blob/master/Images-README/14.png) 
 
-7.	Make changes.  
++	Make changes.  
 Now you can experiment by making changes to the application sources and/or templates.  
 To access the admin page to add users, or add new posts, access through _/admin/_.  
 ![15](https://github.com/ymr89/MsBlog/blob/master/Images-README/15.png)  
 Once you have logged in, you can either add posts through the admins page or in the website as _/posts/create/_.  
 After you’ve tested your changes, commit to the Git repository. 
 
-8.	Deploy to Azure.  
++	Deploy to Azure.  
 If you need help with git, please refer to [Local Git Deployment to Azure App Service] (https://github.com/Azure/azure-content/blob/master/articles/app-service-web/app-service-deploy-local-git.md).
 
 
-**Windows – command line**
+**Windows – Command Line**
 
 +	Clone the repository.  
 First, clone the repository using the URL provided in development section. If you need more information, see [Local Git Deployment to Azure App Service] (https://github.com/Azure/azure-content/blob/master/articles/app-service-web/app-service-deploy-local-git.md).   
@@ -207,13 +207,13 @@ To trigger a deployment, push the changes to Azure.
 ```
 git push azure master
 ```
- 
-**Mac/Linux – command line **
 
-## **Troubleshoot **
+**Mac/Linux – Command Line**
+
+## **Troubleshoot**
 `https://blogs.msdn.microsoft.com/azureossds/2015/08/04/debug-django-web-application-in-azure-web-apps/`
 
-## **Maintainers **
+## **Maintainers**
 
 **Microsoft**
 +	[Andrea Lam] (andrela@microsoft.com)
