@@ -133,82 +133,75 @@ If you need help with git, please refer to [Local Git Deployment to Azure App Se
 
 **Windows – command line**
 
-1.	Clone the repository.  
-First, clone the repository using the URL provided in development section. If you need more information, see [Local Git Deployment to Azure App Service] (https://github.com/Azure/azure-content/blob/master/articles/app-service-web/app-service-deploy-local-git.md). 
++	Clone the repository.  
+First, clone the repository using the URL provided in development section. If you need more information, see [Local Git Deployment to Azure App Service] (https://github.com/Azure/azure-content/blob/master/articles/app-service-web/app-service-deploy-local-git.md).   
 ```
 git clone <repo-url>  
 cd <repo-folder>  
 git remote add azure <repo-url>  
 ```
-1.	Create a virtual environment.  
-We will create a new virtual environment for development purposes (do not add it to the repository). Virtual environments in Python are not relocatable, so every developer working on the application will create their own locally.  
-Make sure to have the same Python version selected for the web app. 
 
++	Create a virtual environment.  
+We will create a new virtual environment for development purposes (do not add it to the repository). Virtual environments in Python are not relocatable, so every developer working on the application will create their own locally.  
+Make sure to have the same Python version selected for the web app.  
 ```
 python -m venv env 
 ```
 
-3.	Change the requirements file. 
-Please refer to step 2 – web app development for Windows – Python Tools for Visual Studio. In the command line, just type requirements.txt.
-
++	Change the requirements file. 
+Please refer to step 2 – web app development for Windows – Python Tools for Visual Studio. In the command line, just type requirements.txt.  
 ```
 requirements.txt
-```
- 
+```  
 Install any external packages required by the application. 
 
 ```
 env\Scripts\pip install -r requirements.txt
 ``` 
 
-4.	Change the information from the database.  
++	Change the information from the database.  
 Cd into the MsBlog folder, and open the settings.py file. To change the database settings, please refer to step 4 – web app development for Windows – Python Tools for Visual Studio. 
 
 ```
 cd MsBlog  
 idle settings.py  
-```
-
+```  
 Don’t forget to cd .. back after you saved the changes in your setting.py file. 
 
 ```
 cd ..
 ```
 
-5.	Migrate and create a super user.  
++ Migrate and create a super user.  
 Run this from the command-line from your project folder to migrate the information: 
 
 ```
 python manage.py migrate
-```
- 
+```  
 Then, run this from the command-line to create a superuser: 
 
 ```
 python manage.py createsuperuser
-```
- 
+```  
 Follow the prompts to set the user name, password, etc. 
 
-6.	Run using development server.  
-You can launch the application running the following command: 
-
++	Run using development server.  
+You can launch the application running the following command:  
 ```
 python manage.py runserver
-```
+```  
+Then, you can open the browser to the URL. 
 
-Then, you can open the browser to that URL. 
-
-7.	Make changes.  
++	Make changes.  
 Please refer to step 7 – web app development for Windows – Python Tools for Visual Studio.  
 After you’ve tested your changes, commit them to the Git repository:
 
 ``` 
 git add <modified-file>  
 git commit -m "<commit-message>" 
-```
- 
-8.	Deploy to azure.  
+```  
+
++ Deploy to azure.  
 To trigger a deployment, push the changes to Azure. 
 
 ```
