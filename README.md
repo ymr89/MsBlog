@@ -53,7 +53,7 @@ Here is an overview of the folders you’ll find in the Git repository, which yo
 
 + Main sources for the application. Consists of 4 pages (index, about, blog, contact) with a master layout. Static content and scripts include bootstrap, jquery and respond.
 
-![](.../Pictures/MsBlog Documentation/1.png)
+![1](https://github.com/ymr89/MsBlog/blob/master/Images-README/1.jpg)
 
 + Local management and development server support. Use this to run the application locally, synchronize the database, and create super user.
 
