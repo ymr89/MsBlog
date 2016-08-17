@@ -146,7 +146,7 @@ git remote add azure <repo-url>
 +	Create a virtual environment.  
 We will create a new virtual environment for development purposes (do not add it to the repository). Virtual environments in Python are not relocatable, so every developer working on the application will create their own locally.  
 Make sure to have the same Python version selected for the web app.  
-```
+```python
 python -m venv env 
 ```
 
