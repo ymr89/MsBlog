@@ -149,24 +149,33 @@ python -m venv env
 ```
 
 +	Change the requirements file. 
-Please refer to step 2 – web app development for Windows – Python Tools for Visual Studio. In the command line, just type requirements.txt.  
+In the command line, type requirements.txt. 
 ```
 requirements.txt
 ```  
+If you’re using a PostgreSQL database, add _psycopg2==2.6.2_. If you’re using a MySQL database, add _MySQL-python==1.2.3_. By default, requirements.txt contains the driver for a PostgreSQL database.  
+
 Install any external packages required by the application. 
 
 ```
 env\Scripts\pip install -r requirements.txt
 ``` 
 
-+	Change the information from the database.  
-Cd into the MsBlog folder, and open the settings.py file. To change the database settings, please refer to step 4 – web app development for Windows – Python Tools for Visual Studio. 
++	Change the information on the database.  
+Cd into the MsBlog folder, and open the settings.py file. 
 
 ```
 cd MsBlog  
 idle settings.py  
 ```  
-Don’t forget to cd .. back after you saved the changes in your setting.py file. 
+
+Scroll down until you find the DATABASES. Change the information according to your database. Save.   
+Engine for PostgreSQL: _'django.db.backends.postgresql_psycopg2'_  
+Engine for MySQL: _'django.db.backends.mysql'_  
+
+![11](https://github.com/ymr89/MsBlog/blob/master/Images-README/11.png)
+
+Don’t forget to _cd .._ to go back into the main folder after you saved the changes in your setting.py file. 
 
 ```
 cd ..
@@ -185,15 +194,22 @@ python manage.py createsuperuser
 ```  
 Follow the prompts to set the user name, password, etc. 
 
-+	Run using development server.  
++ Run using development server.  
 You can launch the application running the following command:  
 ```
 python manage.py runserver
 ```  
 Then, you can open the browser to the URL. 
 
-+	Make changes.  
-Please refer to step 7 – web app development for Windows – Python Tools for Visual Studio.  
+![14](https://github.com/ymr89/MsBlog/blob/master/Images-README/14.png)
+
++ Make changes.  
+Now you can experiment by making changes to the application sources and/or templates. To access the admin page to add users, or add new posts, access through _/admin/_.
+
+![15](https://github.com/ymr89/MsBlog/blob/master/Images-README/15.png) 
+
+Once you have logged in, you can either add posts through the admins page or in the website as _/posts/create/_.
+
 After you’ve tested your changes, commit them to the Git repository:
 
 ``` 
