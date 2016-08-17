@@ -51,15 +51,19 @@ You should have Python and Git already installed, make sure the version is at le
 
 Here is an overview of the folders you’ll find in the Git repository, which you’ll clone in the next section.
 
-+ Main sources for the application. Consists of 4 pages (index, about, blog, contact) with a master layout. Static content and scripts include bootstrap, jquery and respond.
-
++ Main sources for the application. Consists of 4 pages (index, about, blog, contact) with a master layout. Static content and scripts include bootstrap, jquery and respond.  
 ![1](https://github.com/ymr89/MsBlog/blob/master/Images-README/1.jpg)
+![2](https://github.com/ymr89/MsBlog/blob/master/Images-README/2.jpg)
 
-+ Local management and development server support. Use this to run the application locally, synchronize the database, and create super user.
++ Local management and development server support. Use this to run the application locally, synchronize the database, and create super user.  
+![3](https://github.com/ymr89/MsBlog/blob/master/Images-README/3.png)
 
-+ Default database. Includes the necessary tables for the application to run, but it doesn’t contain any users (we will synchronize with a PostgreSQL or MySQL database and create a user).
++ Default database. Includes the necessary tables for the application to run, but it doesn’t contain any users (we will synchronize with a PostgreSQL or MySQL database and create a user).  
+![4](https://github.com/ymr89/MsBlog/blob/master/Images-README/4.png)
 
 + External packages needed by this application. The deployment script will pip install the packages listed in this file. 
+
+
 
 + IIS configuration files. The deployment script will use the appropriate web.config script.
 
