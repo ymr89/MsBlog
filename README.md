@@ -106,7 +106,8 @@ Open the folder MsBlog and double-click on settings.py.
 ![10](https://github.com/ymr89/MsBlog/blob/master/Images-README/10.png)  
 Scroll down until you find the DATABASES. Change the information according to your database. Save.   
 Engine for PostgreSQL: _'django.db.backends.postgresql_psycopg2'_  
-Engine for MySQL: _'django.db.backends.mysql'_
+Engine for MySQL: _'django.db.backends.mysql'_  
+![11](https://github.com/ymr89/MsBlog/blob/master/Images-README/11.png)
 
 5.	Migrate and create a superuser.  
 To migrate the information into the new database, right-click on the root project, select python and click-on migrate.  
