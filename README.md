@@ -61,11 +61,11 @@ Here is an overview of the folders you’ll find in the Git repository, which yo
 + Default database. Includes the necessary tables for the application to run, but it doesn’t contain any users (we will synchronize with a PostgreSQL or MySQL database and create a user).  
 ![4](https://github.com/ymr89/MsBlog/blob/master/Images-README/4.png)
 
-+ External packages needed by this application. The deployment script will pip install the packages listed in this file. 
++ External packages needed by this application. The deployment script will pip install the packages listed in this file.  
+![5](https://github.com/ymr89/MsBlog/blob/master/Images-README/5.png)
 
-
-
-+ IIS configuration files. The deployment script will use the appropriate web.config script.
++ IIS configuration files. The deployment script will use the appropriate web.config script.  
+![6](https://github.com/ymr89/MsBlog/blob/master/Images-README/6.png)
 
 The next 3 sections describe how to proceed with the web app development under 3 different environments:
 
@@ -73,14 +73,14 @@ The next 3 sections describe how to proceed with the web app development under 3
 +	Windows, with command line
 +	Mac/Linux, with command line
 
-## Web App Creation on Portal
+## **Web App Creation on Portal**
 
 The first step in creating your app is to create the web app via the [Azure Portal](https://portal.azure.com).
 
 1. Log into the Azure Portal and click the **NEW** button in the bottom left corner.
-3. In the search box, type "python".
-4. In the search results, select **Django** (published by PTVS), then click **Create**.
-5. Configure the new Django app, such as creating a new App Service plan and a new resource group for it. Then, click **Create**.
+3. In the search box, type "web app".
+4. In the search results, select **Web App**, then click **Create**.
+5. Configure the new app, such as creating a new App Service plan and a new resource group for it. Then, click **Create**.
 6. Configure Git publishing for your newly created web app by following the instructions at [Local Git Deployment to Azure App Service](app-service-deploy-local-git.md).
 
 ## **Web app development**
@@ -89,20 +89,22 @@ The first step in creating your app is to create the web app via the [Azure Port
 
 1.	Clone the repository.  
 First, clone the repository using the URL provided on development section.  
-Open the solution file (.sln) that is included in the root of the repository. 
+Open the solution file (.sln) that is included in the root of the repository.  
+![7](https://github.com/ymr89/MsBlog/blob/master/Images-README/7.png)
 
-[2.](#2) Change the requirements file.  
-    Double-click on requirements.txt. If you’re using a PostgreSQL database, add _psycopg2==2.6.2_.  
-    If you’re using a MySQL database, add _MySQL-python==1.2.3_. By default, requirements.txt contains the driver for a PostgreSQL database. 
+2. Change the requirements file.  
+Double-click on requirements.txt. If you’re using a PostgreSQL database, add _psycopg2==2.6.2_.  
+If you’re using a MySQL database, add _MySQL-python==1.2.3_. By default, requirements.txt contains the driver for a PostgreSQL database.  
+![8](https://github.com/ymr89/MsBlog/blob/master/Images-README/8.png)
 
 3. Create a virtual environment.  
-Right-click on Python Environments and select Add Virtual Environment. Make sure the name is _env_. Click Create, this will create the virtual environment and the dependencies listed in requirenments.txt. 
+Right-click on Python Environments and select Add Virtual Environment. Make sure the name is _env_. Click Create, this will create the virtual environment and the dependencies listed in requirenments.txt.  
+![9](https://github.com/ymr89/MsBlog/blob/master/Images-README/9.png)
 
 4.	Change the information on the database.  
-Open the folder MsBlog and double-click on settings.py. 
-
-Scroll down until you find the DATABASES. Change the information according to your database. Save. 
-
+Open the folder MsBlog and double-click on settings.py.  
+![10](https://github.com/ymr89/MsBlog/blob/master/Images-README/10.png)  
+Scroll down until you find the DATABASES. Change the information according to your database. Save.   
 Engine for PostgreSQL: _'django.db.backends.postgresql_psycopg2'_  
 Engine for MySQL: _'django.db.backends.mysql'_
 
