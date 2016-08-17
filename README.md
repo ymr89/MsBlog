@@ -111,21 +111,20 @@ Engine for MySQL: _'django.db.backends.mysql'_
 
 5.	Migrate and create a superuser.  
 To migrate the information into the new database, right-click on the root project, select python and click-on migrate.  
-
+![12](https://github.com/ymr89/MsBlog/blob/master/Images-README/12.png)  
 Now, create the super user. As before, right-click on the root project, select python and select Create Superuser.
-
+![13](https://github.com/ymr89/MsBlog/blob/master/Images-README/13.png)  
 Django will prompt a command-line to set the superuser. Follow the instructions. 
 
 6.	Run using developer server.  
-Press F5 to start debugging, and your web browser will open automatically to the page running locally. 
- 
+Press F5 to start debugging, and your web browser will open automatically to the page running locally.  
+![14](https://github.com/ymr89/MsBlog/blob/master/Images-README/14.png) 
 
 7.	Make changes.  
 Now you can experiment by making changes to the application sources and/or templates.  
-To access the admin page to add users, or add new posts, access through _/admin/_. 
- 
-Once you have logged in, you can either add posts through the admins page or in the website as _/posts/create/_. 
-
+To access the admin page to add users, or add new posts, access through _/admin/_.  
+![15](https://github.com/ymr89/MsBlog/blob/master/Images-README/15.png)  
+Once you have logged in, you can either add posts through the admins page or in the website as _/posts/create/_.  
 After you’ve tested your changes, commit to the Git repository. 
 
 8.	Deploy to Azure.  
