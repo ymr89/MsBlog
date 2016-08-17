@@ -125,6 +125,8 @@ Now you can experiment by making changes to the application sources and/or templ
 To access the admin page to add users, or add new posts, access through _/admin/_.  
 ![15](https://github.com/ymr89/MsBlog/blob/master/Images-README/15.png)  
 Once you have logged in, you can either add posts through the admins page or in the website as _/posts/create/_.  
+![16](https://github.com/ymr89/MsBlog/blob/master/Images-README/16.png)  
+![17](https://github.com/ymr89/MsBlog/blob/master/Images-README/17.png)  
 After you’ve tested your changes, commit to the Git repository. 
 
 +	Deploy to Azure.  
@@ -198,7 +200,9 @@ Follow the prompts to set the user name, password, etc.
 You can launch the application running the following command:  
 ```
 python manage.py runserver
-```  
+``` 
+![18](https://github.com/ymr89/MsBlog/blob/master/Images-README/18.png)
+
 Then, you can open the browser to the URL. 
 
 ![14](https://github.com/ymr89/MsBlog/blob/master/Images-README/14.png)
@@ -209,6 +213,9 @@ Now you can experiment by making changes to the application sources and/or templ
 ![15](https://github.com/ymr89/MsBlog/blob/master/Images-README/15.png) 
 
 Once you have logged in, you can either add posts through the admins page or in the website as _/posts/create/_.
+
+![16](https://github.com/ymr89/MsBlog/blob/master/Images-README/16.png)  
+![17](https://github.com/ymr89/MsBlog/blob/master/Images-README/17.png)  
 
 After you’ve tested your changes, commit them to the Git repository:
 
@@ -227,7 +234,8 @@ git push azure master
 **Mac/Linux – Command Line**
 
 ## **Troubleshoot**
-`https://blogs.msdn.microsoft.com/azureossds/2015/08/04/debug-django-web-application-in-azure-web-apps/`
+
+If you have trouble with Django, please refer to this [Blog](https://blogs.msdn.microsoft.com/azureossds/2015/08/04/debug-django-web-application-in-azure-web-apps/).
 
 ## **Maintainers**
 
