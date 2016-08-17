@@ -314,13 +314,40 @@ python manage.py runserver
 
 Then, you can open the browser to the URL. 
 
-![14](https://github.com/ymr89/MsBlog/blob/master/Images-README/14.png)
+![19](https://github.com/ymr89/MsBlog/blob/master/Images-README/19.png)
+
++ *Make changes.*  
+Now you can experiment by making changes to the application sources and/or templates. To access the admin page to add users, or add new posts, access through _/admin/_.
+
+![15](https://github.com/ymr89/MsBlog/blob/master/Images-README/15.png) 
+
+Once you have logged in, you can either add posts through the admins page or in the website as _/posts/create/_.
+
+![16](https://github.com/ymr89/MsBlog/blob/master/Images-README/16.png)  
+![17](https://github.com/ymr89/MsBlog/blob/master/Images-README/17.png)  
+
+After you’ve tested your changes, commit them to the Git repository:
+
+``` 
+git add <modified-file>  
+git commit -m "<commit-message>" 
+```  
+
++ *Deploy to azure.*  
+To trigger a deployment, push the changes to Azure. 
+
+```
+git push azure master
+```
 
 
-
-## **Troubleshoot**
+## **Troubleshooting**
 
 If you have trouble with Django, please refer to this [Blog](https://blogs.msdn.microsoft.com/azureossds/2015/08/04/debug-django-web-application-in-azure-web-apps/).
+
+If you have a problem creating the vistual enviroment, please refer to [this](https://github.com/Azure/azure-content/blob/master/includes/web-sites-python-troubleshooting-virtual-environment.md)
+
+If you need more Django documentation, refer to [this](https://www.djangoproject.com/)
 
 ## **Maintainers**
 
