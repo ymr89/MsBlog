@@ -90,9 +90,9 @@ The next 3 sections describe how to proceed with the web app development under 3
 
 If you have trouble with Django, please refer to this [Blog](https://blogs.msdn.microsoft.com/azureossds/2015/08/04/debug-django-web-application-in-azure-web-apps/).
 
-If you have a problem creating the vistual enviroment, please refer to [this](https://github.com/Azure/azure-content/blob/master/includes/web-sites-python-troubleshooting-virtual-environment.md)
+If you have a problem creating the vistual enviroment, please refer to this Microsoft's  [link](https://github.com/Azure/azure-content/blob/master/includes/web-sites-python-troubleshooting-virtual-environment.md).
 
-If you need more Django documentation, refer to [this](https://www.djangoproject.com/)
+If you need more Django documentation, refer to Django's website [here](https://www.djangoproject.com/).
 
 ## **Maintainers**
 
