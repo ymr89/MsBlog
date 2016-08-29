@@ -1,7 +1,7 @@
 # Microsoft Blog
 
 ## **Description**
-Microsoft Blog is a cross platform in which full time employees or interns can share experiences working at Microsoft. These stories will be available for all prospect hires and interns.  The experiences will come as a blog post by-weekly. Readers will be able to like the stories and comment through Facebook. 
+Microsoft Blog is a cross platform web application in which full time employees or interns can share experiences working at Microsoft. These stories will be available for all prospect hires and interns.  The experiences will come as a blog post by-weekly. Readers will be able to like the stories and comment through Facebook. 
 
 The web application aims to open a different perspective for prospective employees to see a different side of the company through the stories. 
 
