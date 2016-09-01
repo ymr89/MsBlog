@@ -1,4 +1,6 @@
 from django import forms
+
+
 from .models import Post
 
 
@@ -8,7 +10,7 @@ class PostForm(forms.ModelForm):
         fields = [
             "title",
             "content",
-            "image",
+            #"image",
             "draft",
             "publish",
         ]
