@@ -1,5 +1,5 @@
 """
-WSGI config for MsBlog project.
+WSGI config for trydjango19 project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
