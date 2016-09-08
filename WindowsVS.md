@@ -31,6 +31,10 @@ Now, create the super user. As before, right-click on the root project, select p
 ![13](https://github.com/ymr89/MsBlog/blob/master/Images-README/13.png)  
 Django will prompt a command-line to set the superuser. Follow the instructions. 
 
++*Collect static files.*  
+To collect the static files, right-click on the root project, select python and click-on Collect Static Files.
+![20](https://github.com/ymr89/MsBlog/blob/master/Images-README/20.png) 
+
 + *Run using developer server.*  
 Press F5 to start debugging, and your web browser will open automatically to the page running locally.  
 ![14](https://github.com/ymr89/MsBlog/blob/master/Images-README/14.png) 
