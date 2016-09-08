@@ -80,27 +80,14 @@ WSGI_APPLICATION = 'MsBlog.wsgi.application'
 DATABASES = {
     'default': {
         #'ENGINE': 'django.db.backends.sqlite3',
-        #'NAME':  os.path.join(BASE_DIR, 'db.sqlite3'),
+        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'test',
-        'USER': 'pguser@yaditest',
-        'PASSWORD': 'Yukon900',
-        'HOST': 'yaditest.orcasql-scus1-a.mscds.com',
+        'NAME': '<Your database name>',
+        'USER': '<Your username>',
+        'PASSWORD': '<Your password>',
+        'HOST': '<your server>.mscds.com',
         'PORT': '5432',
-
-        #'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        #'NAME': 'microsoftblog',
-        #'USER': 'pguser@yaditest',
-        #'PASSWORD': 'Yukon900',
-        #'HOST': 'yaditest.orcasql-scus1-a.mscds.com',
-        #'PORT': '5432',
-        
-        #'ENGINE': 'django.db.backends.mysql',
-        #'NAME': 'microsoftblog',
-        #'USER': 'apptest%test',
-        #'PASSWORD': 'User@123',
-        #'HOST': 'apptest.sqltest-eg1.mscds.com',
         
     }
 }
@@ -157,7 +144,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
 MEDIA_URL = "/media/"
-MEDIA_ROOT = os.path.join("media/")
+MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
 
 
 
